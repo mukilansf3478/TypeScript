@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+    font-weight: bolder;
+}
+#maindiv
+{
+    visibility: visible;
+    margin: 150px;
+}
+#newuser
+{
+    visibility: hidden;
+    margin: -200px 150px;
+}
+#exist
+{
+
+    visibility: hidden;
+    margin: -350px 150px;
+}
+#mainmenu
+{
+    visibility: hidden;
+    margin: 250px 150px;
+    
+}
+#coursediv
+{
+    visibility: hidden;
+    margin: 150px;
+   
+}
+#enrolldiv
+{
+    visibility: hidden;
+    margin: 150px;
+    margin: -250px 150px;
+}

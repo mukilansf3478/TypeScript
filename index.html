@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style/style.css">
+        <script type="text/javascript" src="script/script.js"></script>
+    </head>
+    <body>
+        <h1>Online Course Enrollment</h1><br><br>
+        <div id="maindiv">
+            <button onclick="newuser1()">New User</button><br><br>
+            <button onclick="existingUser1()">Existing User</button>
+        </div>
+        
+        <div id="newuser">
+            <h4>User Registration</h4>
+            <table>
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age</label></td>
+                    <td><input type="text" id="age" maxlength="2"></td>
+                </tr>
+                <tr>
+                    <td><label for="mobileno">Mobile No</label></td>
+                    <td><input type="text" id="mobileno" maxlength="10"></td>
+                </tr>
+            </table><br><br>
+            <button onclick="register()">Register</button>
+        </div>
+        <div id="exist">
+            <table>
+                <tr>
+                <td><label for="uid">Enter Your User ID :</label></td>
+                   <td> <input type="text" id="uid"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button onclick="login1()">Login</button></td></tr>
+                <tr>
+                    <td><label id="existUser"></label></td>
+                </tr>
+                
+            </table>
+        </div>
+
+        <div id="mainmenu">
+            <label id="welcome"></label>
+            <button onclick="availablecourse1()">Available Cources</button><br><br>
+            <button onclick="enrolledcourse1()">View Enrolled Courses</button>
+        </div>
+
+        <div id="coursediv">
+            
+            <label id="wel"></label>
+            <table>
+                <tr>
+                    <td><labe>Course Name</labe></td>
+                    <td>
+                        <select name="course" id="course">
+                            <option value="html">HTML</option>
+                            <option value="csharp">CSharp</option>
+                            <option value="css">CSS</option>
+                            <option value="javaScript">JavaScript</option>
+                            <option value="typeScript">Type Script</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Required Days</label></td>
+                    <td><input type="number" value="0" id="days"></td>
+                </tr>
+            </table>
+            <button onclick="courseenroll()">Enroll</button>
+        </div>
+
+        <div id="enrolldiv">
+            <label >Courses :</label>
+            <p> <span id="enrollhistory"></span></p>
+
+        </div>
+    </body>
+</html>
